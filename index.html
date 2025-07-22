@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Carmen Montalvo Luque</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="language-switcher">
+      <button onclick="setLanguage('es')">ES</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+    <h1 class="es">Carmen Montalvo Luque</h1>
+    <h1 class="en">Carmen Montalvo Luque</h1>
+
+    <p class="es">Desarrolladora Junior de Software y Aplicaciones Web</p>
+    <p class="en">Junior Software and Web Developer</p>
+
+    <nav>
+      <a href="#proyectos" class="es">Proyectos</a>
+      <a href="#proyectos" class="en">Projects</a>
+      <a href="#sobre-mi" class="es">Sobre mí</a>
+      <a href="#sobre-mi" class="en">About me</a>
+      <a href="#contacto" class="es">Contacto</a>
+      <a href="#contacto" class="en">Contact</a>
+    </nav>
+  </header>
+
+  <section id="proyectos">
+    <h2 class="es">Proyectos</h2>
+    <h2 class="en">Projects</h2>
+
+    <div class="proyecto">
+      <h3>The Rusty Cauldron</h3>
+      <p class="es">Aplicación web desarrollada con ASP.NET y Entity Framework como proyecto de fin de grado.</p>
+      <p class="en">Web application developed with ASP.NET and Entity Framework as my final degree project.</p>
+      <a href="https://github.com/tuusuario/the-rusty-cauldron" target="_blank">GitHub</a>
+    </div>
+
+    <div class="proyecto">
+      <h3 class="es">Web corporativa (Cordoware)</h3>
+      <h3 class="en">Corporate Website (Cordoware)</h3>
+      <p class="es">Desarrollo de la nueva web corporativa durante mis prácticas profesionales.</p>
+      <p class="en">Development of a new corporate website during my internship.</p>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <h2 class="es">Sobre mí</h2>
+    <h2 class="en">About Me</h2>
+    <p class="es">
+Graduada en Desarrollo de Aplicaciones Web, con 27 años y gran motivación por crecer en el ámbito del desarrollo web y de software. Soy una persona responsable, resolutiva y con buena capacidad para el trabajo en equipo. Me adapto con rapidez a nuevos entornos y afronto los retos técnicos con entusiasmo.
+
+Como proyecto de fin de grado desarrollé The Rusty Cauldron, una aplicación web personalizada con ASP.NET y Entity Framework, disponible en GitHub. Busco integrarme en un equipo donde seguir aprendiendo y aportar valor desde el primer día.    </p>
+    <p class="en">
+Graduate in Web Application Development, 27 years old, highly motivated to grow in the field of web and software development. I am a responsible, solution-oriented person with strong teamwork skills. I adapt quickly to new environments and approach technical challenges with enthusiasm.
+For my final project (thesis), I developed The Rusty Cauldron, a custom web application using ASP.NET and Entity Framework, available on GitHub. I am seeking to join a team where I can continue learning and contribute value from day one.    </p>
+  </section>
+
+  <section id="contacto">
+    <h2 class="es">Contacto</h2>
+    <h2 class="en">Contact</h2>
+    <p>📞 +34 610 197 516</p>
+    <p>📧 carmenmontalvoluque@gmail.com</p>
+    <p
+    <p>
+      🔗 <a href="https://github.com/Menmamen" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/carmen-montalvo-luque" target="_blank">LinkedIn</a> | 
+      <a href="assets/CarmenMontalvoLuque_CV_ES.pdf" target="_blank" class="es">Ver CV</a>
+      <a href="assets/CarmenMontalvoLuque_CV_EN.pdf" target="_blank" class="en">View CV</a>
+    </p>
+  </section>
+
+  <footer>
+    <p class="es">&copy; 2025 Carmen Montalvo Luque</p>
+    <p class="en">&copy; 2025 Carmen Montalvo Luque</p>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.es').forEach(el => {
+        el.style.display = lang === 'es' ? 'block' : 'none';
+      });
+      document.querySelectorAll('.en').forEach(el => {
+        el.style.display = lang === 'en' ? 'block' : 'none';
+      });
+    }
+
+    // Idioma predeterminado
+    setLanguage('es');
+  </script>
+</body>
+</html>
