@@ -1,48 +1,37 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
+.perfil-img {
+  width: 350px;      /* tamaño deseado */
+  height: 350px;
+  object-fit: cover; /* para que se recorte bien */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  background-color: #515151 !important;  /* gris oscuro */
+  color: white !important;
+  border: none !important;
 }
 
-header {
-  background: #222;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.show > .btn.dropdown-toggle {
+  background-color: #666666 !important; /* gris más claro */
+  color: white !important;
 }
 
-header nav a {
-  margin: 0 1rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+a {
+  color: black !important; /* gris oscuro */
 }
-
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+a:hover,
+a:focus,
+a:active {
+  color: #666666 !important; /* gris más claro */
 }
-
-.proyecto {
-  background: #fff;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  margin-bottom: 1rem;
-  border-radius: 8px;
+.header-bg-gray {
+  background-color: #333333;
 }
-
-.proyecto a {
-  color: #007acc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer {
-  background: #eee;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+.footer-bg-gray {
+  background-color: #333333;
 }

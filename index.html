@@ -1,95 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio - Carmen Montalvo Luque</title>
-  <link rel="stylesheet" href="src/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Carmen Montalvo Luque</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
-<body>
-  <header>
-    <div class="language-switcher">
-      <button onclick="setLanguage('es')">ES</button>
-      <button onclick="setLanguage('en')">EN</button>
-    </div>
-    <h1 class="es">Carmen Montalvo Luque</h1>
-    <h1 class="en">Carmen Montalvo Luque</h1>
 
-    <p class="es">Desarrolladora Junior de Software y Aplicaciones Web</p>
-    <p class="en">Junior Software and Web Developer</p>
+<body class="bg-light text-dark">
 
-    <nav>
-      <a href="#proyectos" class="es">Proyectos</a>
-      <a href="#proyectos" class="en">Projects</a>
-      <a href="#sobre-mi" class="es">Sobre mí</a>
-      <a href="#sobre-mi" class="en">About me</a>
-      <a href="#contacto" class="es">Contacto</a>
-      <a href="#contacto" class="en">Contact</a>
-    </nav>
-  </header>
+    <header class="header-bg-gray text-white py-4 mb-5">
+        <div class="container text-center">
+            <div class="mb-3">
+                <button class="btn btn-outline-light btn-sm me-2" onclick="setLanguage('es')">ES</button>
+                <button class="btn btn-outline-light btn-sm" onclick="setLanguage('en')">EN</button>
+            </div>
+            <h1 class="es">Carmen Montalvo Luque</h1>
+            <h1 class="en">Carmen Montalvo Luque</h1>
+            <p class="lead es">Desarrolladora Junior de Software y Aplicaciones Web</p>
+            <p class="lead en">Junior Software and Web Developer</p>
 
-  <section id="proyectos">
-    <h2 class="es">Proyectos</h2>
-    <h2 class="en">Projects</h2>
+            <!-- Menú de navegación en 3 columnas -->
+            <div class="row mt-4">
+                <div class="col-4">
+                    <a href="#sobre-mi" class="btn btn-light btn-sm w-100 es">Sobre mí</a>
+                    <a href="#sobre-mi" class="btn btn-light btn-sm w-100 en">About me</a>
+                </div>
+                <div class="col-4">
+                    <a href="#proyectos" class="btn btn-light btn-sm w-100 es">Proyectos</a>
+                    <a href="#proyectos" class="btn btn-light btn-sm w-100 en">Projects</a>
+                </div>
 
-    <div class="proyecto">
-      <h3>The Rusty Cauldron</h3>
-      <p class="es">Aplicación web desarrollada con ASP.NET y Entity Framework como proyecto de fin de grado.</p>
-      <p class="en">Web application developed with ASP.NET and Entity Framework as my final degree project.</p>
-      <a href="https://github.com/tuusuario/the-rusty-cauldron" target="_blank">GitHub</a>
-    </div>
+                <div class="col-4">
+                    <a href="#contacto" class="btn btn-light btn-sm w-100 es">Contacto</a>
+                    <a href="#contacto" class="btn btn-light btn-sm w-100 en">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div class="proyecto">
-      <h3 class="es">Web corporativa (Cordoware)</h3>
-      <h3 class="en">Corporate Website (Cordoware)</h3>
-      <p class="es">Desarrollo de la nueva web corporativa durante mis prácticas profesionales.</p>
-      <p class="en">Development of a new corporate website during my internship.</p>
-    </div>
-  </section>
+    <main class="container">
 
-  <section id="sobre-mi">
-    <h2 class="es">Sobre mí</h2>
-    <h2 class="en">About Me</h2>
-    <p class="es">
-Graduada en Desarrollo de Aplicaciones Web, con 27 años y gran motivación por crecer en el ámbito del desarrollo web y de software. Soy una persona responsable, resolutiva y con buena capacidad para el trabajo en equipo. Me adapto con rapidez a nuevos entornos y afronto los retos técnicos con entusiasmo.
+        <!-- Sección Sobre mí -->
+        <section id="sobre-mi" class="mb-5">
+            <h2 class="mb-3 es">Sobre mí</h2>
+            <h2 class="mb-3 en">About Me</h2>
+            <div class="text-center my-4">
+                <img src="assets/img/profilePic.JPG" alt="Foto Carmen Montalvo Luque"
+                    class="rounded-circle img-fluid perfil-img" />
+            </div>
 
-Como proyecto de fin de grado desarrollé The Rusty Cauldron, una aplicación web personalizada con ASP.NET y Entity Framework, disponible en GitHub. Busco integrarme en un equipo donde seguir aprendiendo y aportar valor desde el primer día.    </p>
-    <p class="en">
-Graduate in Web Application Development, 27 years old, highly motivated to grow in the field of web and software development. I am a responsible, solution-oriented person with strong teamwork skills. I adapt quickly to new environments and approach technical challenges with enthusiasm.
-For my final project (thesis), I developed The Rusty Cauldron, a custom web application using ASP.NET and Entity Framework, available on GitHub. I am seeking to join a team where I can continue learning and contribute value from day one.    </p>
-  </section>
+            <p class="es">
+                Graduada en Desarrollo de Aplicaciones Web, con 27 años y gran motivación por crecer en el ámbito del
+                desarrollo web y de software. Soy una persona responsable, resolutiva y con buena capacidad para el
+                trabajo
+                en equipo. Me adapto con rapidez a nuevos entornos y afronto los retos técnicos con entusiasmo.
+                <br /><br />
+                Como proyecto de fin de grado desarrollé The Rusty Cauldron, una aplicación web personalizada con
+                ASP.NET y
+                Entity Framework, disponible en GitHub. Busco integrarme en un equipo donde seguir aprendiendo y aportar
+                valor desde el primer día.
+            </p>
+            <p class="en">
+                Graduate in Web Application Development, 27 years old, highly motivated to grow in the field of web and
+                software development. I am a responsible, solution-oriented person with strong teamwork skills. I adapt
+                quickly to new environments and approach technical challenges with enthusiasm.
+                <br /><br />
+                For my final project (thesis), I developed The Rusty Cauldron, a custom web application using ASP.NET
+                and
+                Entity Framework, available on GitHub. I am seeking to join a team where I can continue learning and
+                contribute value from day one.
+            </p>
+        </section>
 
-  <section id="contacto">
-    <h2 class="es">Contacto</h2>
-    <h2 class="en">Contact</h2>
-    <p>📞 +34 610 197 516</p>
-    <p>📧 carmenmontalvoluque@gmail.com</p>
-    <p
-    <p>
-      🔗 <a href="https://github.com/Menmamen" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/carmen-montalvo-luque" target="_blank">LinkedIn</a> | 
-      <a href="assets/CarmenMontalvoLuque_CV_ES.pdf" target="_blank" class="es">Ver CV</a>
-      <a href="assets/CarmenMontalvoLuque_CV_EN.pdf" target="_blank" class="en">View CV</a>
-    </p>
-  </section>
+        <section id="proyectos" class="mb-5">
+            <h2 class="mb-4 es">Proyectos</h2>
+            <h2 class="mb-4 en">Projects</h2>
 
-  <footer>
-    <p class="es">&copy; 2025 Carmen Montalvo Luque</p>
-    <p class="en">&copy; 2025 Carmen Montalvo Luque</p>
-  </footer>
+            <!-- Proyecto 1 -->
+            <div class="proyecto mb-5">
+                <h3>The Rusty Cauldron</h3>
+                <p class="es">Aplicación web desarrollada con ASP.NET y Entity Framework como proyecto de fin de grado.
+                </p>
+                <p class="en">Web application developed with ASP.NET and Entity Framework as my final degree project.
+                </p>
+                <a href="https://github.com/Menmamen/TheRustyCauldron" class="btn btn-primary btn-sm mb-3"
+                    target="_blank">GitHub</a>
 
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('.es').forEach(el => {
-        el.style.display = lang === 'es' ? 'block' : 'none';
-      });
-      document.querySelectorAll('.en').forEach(el => {
-        el.style.display = lang === 'en' ? 'block' : 'none';
-      });
-    }
+                <!-- Carousel de imágenes -->
+                <div id="carouselTRC" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/trc/img01.png" class="d-block w-100" alt="Captura 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img02.png" class="d-block w-100" alt="Captura 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img03.png" class="d-block w-100" alt="Captura 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img04.png" class="d-block w-100" alt="Captura 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img05.png" class="d-block w-100" alt="Captura 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img06.png" class="d-block w-100" alt="Captura 6">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img07.png" class="d-block w-100" alt="Captura 7">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img08.png" class="d-block w-100" alt="Captura 8">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img09.png" class="d-block w-100" alt="Captura 9">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img10.png" class="d-block w-100" alt="Captura 10">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img11.png" class="d-block w-100" alt="Captura 11">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img12.png" class="d-block w-100" alt="Captura 12">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/trc/img13.png" class="d-block w-100" alt="Captura 13">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTRC"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTRC"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
 
-    // Idioma predeterminado
-    setLanguage('es');
-  </script>
+
+
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="proyecto mb-5">
+                <h3 class="es">Web corporativa (Cordoware)</h3>
+                <h3 class="en">Corporate Website (Cordoware)</h3>
+                <p class="es">Desarrollo de la nueva web corporativa durante mis prácticas profesionales.</p>
+                <p class="en">Development of a new corporate website during my internship.</p>
+                <a href="https://cordoware.com/" class="btn btn-primary btn-sm mb-3" target="_blank">Cordoware</a>
+
+                <div id="carouselCDW" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/cdw/img01.png" class="d-block w-100" alt="Captura 1" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/cdw/img02.png" class="d-block w-100" alt="Captura 2" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/cdw/img03.png" class="d-block w-100" alt="Captura 3" />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCDW"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCDW"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACTO con diseño alineado -->
+        <section id="contacto" class="container my-4">
+            <h2 class="es">Contacto</h2>
+            <h2 class="en">Contact</h2>
+
+            <div class="row text-center align-items-center">
+                <div class="col-6 mb-3">
+                    <i class="bi bi-telephone-fill me-2"></i>
+                    +34 610 197 516
+                </div>
+                <div class="col-6 mb-3">
+                    <i class="bi bi-envelope-fill me-2"></i>
+                    carmenmontalvoluque@gmail.com
+                </div>
+                <div class="col-6 mb-3">
+                    <a href="https://github.com/Menmamen" target="_blank" class="text-decoration-none">
+                        <i class="bi bi-github me-2"></i>GitHub
+                    </a>
+                </div>
+                <div class="col-6 mb-3">
+                    <a href="https://www.linkedin.com/in/carmen-montalvo-luque" target="_blank"
+                        class="text-decoration-none">
+                        <i class="bi bi-linkedin me-2"></i>LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-3 text-center">
+                <a href="assets/CarmenMontalvoLuque_CV_ES.pdf" target="_blank" class="btn btn-primary es me-2">Ver
+                    CV</a>
+                <a href="assets/CarmenMontalvoLuque_CV_EN.pdf" target="_blank" class="btn btn-primary en">View CV</a>
+            </div>
+        </section>
+
+        <!-- Botón -->
+        <button id="btnTop" title="Volver arriba"
+            style="position: fixed; bottom: 35px; right: 20px; display: none; z-index: 1000;" class="btn btn-dark">
+            ↑
+        </button>
+
+    </main>
+
+    <footer class="footer-bg-gray text-white text-center py-3">
+        <p class="mb-0 es">&copy; 2025 - Carmen Montalvo Luque</p>
+        <p class="mb-0 en">&copy; 2025 - Carmen Montalvo Luque</p>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            document.querySelectorAll('.es').forEach(el => {
+                el.style.display = lang === 'es' ? 'block' : 'none';
+            });
+            document.querySelectorAll('.en').forEach(el => {
+                el.style.display = lang === 'en' ? 'block' : 'none';
+            });
+        }
+        setLanguage('es');
+    </script>
+    <script>
+        const btnTop = document.getElementById('btnTop');
+
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 200) {
+                btnTop.style.display = "block";
+            } else {
+                btnTop.style.display = "none";
+            }
+        };
+
+        btnTop.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
